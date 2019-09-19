@@ -1,0 +1,49 @@
+$main-color: lightblue
+$default-space: 1rem
+$carousel-image-size: 14rem
+$long-carousel-height: 20rem
+
+header
+    background-color: $main-color
+    padding: $default-space
+    h1
+        color: white
+        font-weight: bold
+
+main
+    padding: $default-space
+
+.main-section
+    margin-top: calc(#{$default-space} * 3)
+
+.mini
+    min-height: $carousel-image-size
+    min-width: $carousel-image-size
+    box-shadow: 5px 5px 1rem .25rem lightslategrey
+
+.long
+    display: flex
+    align-items: center
+    padding: $default-space
+    height: $long-carousel-height
+    width: 80%
+    img 
+        max-height: $carousel-image-size
+        max-width: $carousel-image-size
+
+.carousel-headline
+    font-size: $default-space;
+    font-weight: bold;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding: calc(#{$default-space} / 2)
+
+hr
+    margin: calc(#{$default-space} * 4) 0
+
+footer 
+    background-color: $main-color
+    padding: $default-space
+    color: white
+    width: 100%

@@ -1,0 +1,54 @@
+$default-space: 1rem
+
+.carousel 
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: wrap
+    margin-bottom: calc(#{$default-space} * 3)
+    span
+        margin: $default-space
+        font-size: 2rem
+    span:hover
+        cursor: pointer
+    .description
+        margin-top: calc(#{$default-space} * 2)
+        min-width: 40%
+        *
+            margin: 0 $default-space $default-space
+        h1
+            font-size: 3rem
+            font-weight: 500
+        p
+            line-height: 1.5rem
+        a
+            color: black
+            text-decoration: none
+            font-weight: bold
+        a:hover
+            text-decoration: underline
+
+.carousel__container
+    position: relative
+    overflow: hidden
+
+.carousel__item 
+    visibility: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    z-index: 0
+    transform: translateX(100%)
+    transition: all .1s ease-in-out
+    img
+        max-width: 100%
+        height: auto
+
+.showing 
+    visibility: visible
+    transform: translateX(0)
+    z-index: 1
+
+.unshowing 
+    transform: translateX(-100%)

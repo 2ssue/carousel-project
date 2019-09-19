@@ -1,0 +1,44 @@
+header {
+  background-color: lightblue;
+  padding: 1rem; }
+  header h1 {
+    color: white;
+    font-weight: bold; }
+
+main {
+  padding: 1rem; }
+
+.main-section {
+  margin-top: calc(1rem * 3); }
+
+.mini {
+  min-height: 14rem;
+  min-width: 14rem;
+  box-shadow: 5px 5px 1rem .25rem lightslategrey; }
+
+.long {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  height: 20rem;
+  width: 80%; }
+  .long img {
+    max-height: 14rem;
+    max-width: 14rem; }
+
+.carousel-headline {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: black;
+  display: inline-block;
+  color: white;
+  padding: calc(1rem / 2); }
+
+hr {
+  margin: calc(1rem * 4) 0; }
+
+footer {
+  background-color: lightblue;
+  padding: 1rem;
+  color: white;
+  width: 100%; }

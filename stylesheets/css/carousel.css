@@ -1,0 +1,52 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin-bottom: calc(1rem * 3); }
+  .carousel span {
+    margin: 1rem;
+    font-size: 2rem; }
+  .carousel span:hover {
+    cursor: pointer; }
+  .carousel .description {
+    margin-top: calc(1rem * 2);
+    min-width: 40%; }
+    .carousel .description * {
+      margin: 0 1rem 1rem; }
+    .carousel .description h1 {
+      font-size: 3rem;
+      font-weight: 500; }
+    .carousel .description p {
+      line-height: 1.5rem; }
+    .carousel .description a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold; }
+    .carousel .description a:hover {
+      text-decoration: underline; }
+
+.carousel__container {
+  position: relative;
+  overflow: hidden; }
+
+.carousel__item {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+  transform: translateX(100%);
+  transition: all .1s ease-in-out; }
+  .carousel__item img {
+    max-width: 100%;
+    height: auto; }
+
+.showing {
+  visibility: visible;
+  transform: translateX(0);
+  z-index: 1; }
+
+.unshowing {
+  transform: translateX(-100%); }
