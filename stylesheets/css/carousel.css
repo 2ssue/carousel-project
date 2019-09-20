@@ -11,7 +11,8 @@
     cursor: pointer; }
   .carousel .description {
     margin-top: calc(1rem * 2);
-    min-width: 40%; }
+    min-width: 40%;
+    max-width: 60%; }
     .carousel .description * {
       margin: 0 1rem 1rem; }
     .carousel .description h1 {
