@@ -91,7 +91,7 @@ async function renderMainCard(){
     const mainCardContainer = document.getElementById('main-card');
     let carouselList = [];
     
-    await fetch('../dummyData/test.json')
+    await fetch('./dummyData/test.json')
     .then(response => response.json())
     .then((data) => {
         const cardData = data.Card;
@@ -120,7 +120,7 @@ async function renderMainCarousel(){
         return customElementString;
     }
 
-    await fetch('../dummyData/test.json')
+    await fetch('./dummyData/test.json')
     .then(response => response.json())
     .then((data) => {
         const carouselData = data.MainCarousel;
@@ -144,7 +144,7 @@ async function renderMainCarousel(){
 async function renderMiniCarousel(){
     const miniCarouselContainer = document.getElementById('mini-carousel');
 
-    await fetch('../dummyData/test.json')
+    await fetch('./dummyData/test.json')
     .then(response => response.json())
     .then(data => {
         const carouselData = data.MiniCarousel;
